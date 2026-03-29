@@ -1,0 +1,44 @@
+{
+  "name": "ai-music-generator",
+  "version": "1.0.0",
+  "description": "AI-powered music generation platform with LSTM neural networks and professional studio interface",
+  "main": "app.py",
+  "scripts": {
+    "start": "python app.py",
+    "dev": "python app.py",
+    "frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "install-all": "pip install -r requirements.txt && cd frontend && npm install",
+    "setup": "python -m venv .venv && pip install -r requirements.txt && cd frontend && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/ai-music-generator.git"
+  },
+  "keywords": [
+    "ai",
+    "music",
+    "generation",
+    "lstm",
+    "neural-network",
+    "midi",
+    "react",
+    "flask",
+    "tensorflow",
+    "machine-learning",
+    "audio",
+    "composition",
+    "studio",
+    "synthesizer"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/ai-music-generator/issues"
+  },
+  "homepage": "https://github.com/yourusername/ai-music-generator#readme",
+  "engines": {
+    "python": ">=3.8.0",
+    "node": ">=16.0.0"
+  }
+}

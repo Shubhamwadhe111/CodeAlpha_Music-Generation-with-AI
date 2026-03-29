@@ -1,0 +1,23 @@
+
+D:\music website\frontend\src\App.jsx
+  6:10  error  Parsing error: Identifier 'LibraryPanel' has already been declared
+
+D:\music website\frontend\src\components\AetherMidiPlayer.jsx
+  129:43  error    'currentTick' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               no-unused-vars
+  148:26  error    'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         no-unused-vars
+  148:29  error    Empty block statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 no-empty
+  157:8   warning  React Hook useEffect has missing dependencies: 'delayLevel', 'filterCutoff', 'midiBase64', 'onNoteOff', 'onNoteOn', and 'reverbLevel'. Either include them or remove the dependency array. If 'onNoteOn' changes too often, find the parent component that defines it and wrap that definition in useCallback                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         react-hooks/exhaustive-deps
+  303:52  error    Error: Cannot call impure function during render
+
+`Date.now` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+  301 |                     <a
+  302 |                         href={recordedUrl}
+> 303 |                         download={`Aether_Bounce_${Date.now()}.webm`}
+      |                                                    ^^^^^^^^^^ Cannot call impure function
+  304 |                         className="px-4 py-2 bg-aether-success text-black text-sm font-bold rounded-lg hover:scale-105 transition"
+  305 |                     >
+  306 |                         Save .webm  react-hooks/purity
+
+✖ 6 problems (5 errors, 1 warning)
+
